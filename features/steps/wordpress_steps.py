@@ -15,6 +15,7 @@ def step_verify_title(context):
 
     expected = "WordPress.org"
     actual = context.page.get_title()
+    print(f"Actual title : ${actual}")
 
     assert expected in actual
 
